@@ -1,19 +1,461 @@
-여긴 3번
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <title>Web1 - html</title>
-  <meta charset="utf-8">
-</head>
-<body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-<ol>
-<h2>HTML</h2>
-<h1>HTML이란 무엇인가?</h1>
+<meta charset="UTF-8">
+<meta name="robots" content="ALL">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="마법공식">
+<meta name="author" content="정석투자연구소">
+<meta name="content-language" content="ko">
+<meta name="keywords" content="마법공식,가치투자,대박공식,워렌버핏,종목추천,재무제표,기업분석,스크리닝,기업실적,주식투자,증권투자,무료종목추천">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="정석투자연구소"/>
+<meta property="og:type" content="site"/>
+<meta property="og:url" content="www.jstooza.com"/>
+<meta property="og:description" content="마법공식,조엘그린블라트,대박공식,워렌버핏,가치투자,종목추천,투자전략,재무제표,기업분석,스크리닝,기업실적,주식투자,증권투자,투자정보,투자전략"/>
+<meta property="og:image" content="http://www.jstooza.com/bbs/bbs/view.php?bbs_no=9&amp;data_no=29"/>
 
-<a href="http://www.jstooza.com/"target="_blank">Hypertest</a>
+<!-- link canonical -->
+<link rel="canonical" href="www.jstooza.com" />
+<!-- title -->
+<title>정석투자연구소</title>
+<!-- stylesheet -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600italic,600' rel='stylesheet' type='text/css'>
+<!-- bootstrap Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- bootstrap Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="/css/jasny-bootstrap.min.css">
+<link rel="stylesheet" href="/css/flexslider.css" type="text/css">
+<!-- Favicon -->
+
+<link type="text/css" media="all" rel="stylesheet" href="/css/jquery.tosrus.all.css" />
+<link type="text/css" media="all" rel="stylesheet" href="/css/slick.css" />
+<link type="text/css" media="all" rel="stylesheet" href="/css/owl.carousel.css" />
+<link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="/css/plugins/slide-in-panel/style.css" />
+<script type="text/javascript" src="/js/HuskyEZCreator.js" charset="utf-8"></script>
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/theme/e/custom.css">
+<link rel="stylesheet" href="/skin/custom.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<script src="/js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Javascript files -->
+
+<!--CDN-->
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<!-- BOOTSTRAP Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- for dragging/swiping/pinching, include hammer.js -->
+<script type="text/javascript" src="/js/hammer.min.js"></script>
+<!-- for scaling UI buttons (for wide websites on small screens), include FlameViewportScale -->
+<script type="text/javascript" language="javascript" src="/js/FlameViewportScale.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/js/owl.carousel.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/slick.min.js"></script>
+<!-- include Tos "R"Us -->
+<script type="text/javascript" language="javascript" src="/js/jquery.tosrus.min.all.js"></script>
+<!-- webfont -->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.0/webfont.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/bootstrap-datetimepicker.min.js"></script>
+<!--에디터-->
+<script src="/js/jasny-bootstrap.min.js"></script>
+<script src="/js/summernote.min.js"></script>
+<link rel="stylesheet" href="/css/summernote.css" type="text/css">
+<!--에디터-->
+
+<script type="text/javascript" src="/js/all.js" charset="utf-8"></script>
+
+<script src="/theme/e/custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.uneven').slick({
+        dots: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+		slide : 'div'
+    });
+	$(".slick-track").prop("id","freewall");
+	$('.slick-slide').click(function(){
+		$('.slider a[data-no="'+$(this).attr('data-no')+'"]').click();
+	});
+});
+</script>
+<!--/******************************************************플렉스 슬라이더**********************************************/-->
+<script type="text/javascript">
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+});
+</script>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89584823-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<body class="body-layout">
+<p align="center" style="text-align: center; line-height: 1;"><u><br></u></p><p align="center" style="text-align: center; line-height: 1;"><u><b><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><span style="color: rgb(149, 16, 21);"><u><span style="color: rgb(149, 16, 21);"><u><a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=19&amp;data_no=565&amp;page_no=1&amp;sub_id=" target="_self"><span style="color: rgb(149, 16, 21);"><u>[12월추천]</u></span></a><span style="color: rgb(0, 117, 200);"><u>&nbsp;&nbsp;</u></span></u></span></u></span><span style="color: rgb(0, 117, 200);"><u> </u></span><a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=19&amp;data_no=565&amp;page_no=1&amp;sub_id=" target="_self"><span style="color: rgb(0, 117, 200);"><u>이익성장 투자 전략 추천은...</u></span></a></span></b><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 14pt;"><a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=19&amp;data_no=565&amp;page_no=1&amp;sub_id=" target="_self"><b><span style="color: rgb(0, 117, 200);"><u>​</u></span></b></a></span></u></p><p align="center" style="text-align: center; line-height: 1;"><b style=""><u></u><span style="font-size: 14pt;"><u style=""><a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=25&amp;data_no=563&amp;page_no=1&amp;sub_id=" target="_self"><span style="font-family: 나눔고딕코딩, NanumGothicCoding, sans-serif; color: rgb(149, 16, 21);">[11월추천]</span><span style="font-family: 나눔고딕코딩, NanumGothicCoding, sans-serif;">&nbsp;</span><span style="font-family: 나눔고딕코딩, NanumGothicCoding, sans-serif; color: rgb(0, 117, 200);"><u>마법공식 투자전략 18.</u></span></a><font color="#0075c8" face="나눔고딕코딩, NanumGothicCoding, sans-serif"><a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=25&amp;data_no=563&amp;page_no=1&amp;sub_id=" target="_self"><span style="color: rgb(0, 117, 200);"><u>11.21</u></span></a></font></u></span></b></p><p align="center" style="text-align: center; line-height: 1;">&nbsp;</p><p align="center" style="text-align: center; line-height: 1;"><a href="http://jstooza.com/skin/page/jsmagic.html" target="_self"><img title="%ED%88%AC%EC%9E%90%EC%A0%84%EB%9E%B5.jpg" class="img-responsive" style="display: inline;" src="/skin/upload/%ED%88%AC%EC%9E%90%EC%A0%84%EB%9E%B5.jpg"></a>&nbsp;<a href="https://youtu.be/adk3IJI2HVQ" target="_self"><img title="%EB%B0%9C%EA%B5%B4%EB%A7%88%EB%B2%95.jpg" class="img-responsive" style="display: inline;" src="/skin/upload/%EB%B0%9C%EA%B5%B4%EB%A7%88%EB%B2%95.jpg"></a>&nbsp;<a href="https://youtu.be/UPv2tqplmMU" target="_self"><img title="%EB%B0%9C%EA%B5%B4%EC%9D%B4%EC%9D%B5_1.jpg" class="img-responsive" style="display: inline;" src="/skin/upload/%EB%B0%9C%EA%B5%B4%EC%9D%B4%EC%9D%B5_1.jpg"></a></p><p align="center" style="text-align: center; line-height: 1;"><a style="background-color: rgb(255, 255, 255);" href="http://jstooza.com/bbs/bbs/?bbs_no=25" target="_self"><img title="%EC%A2%85%EB%AA%A9%EC%B6%94%EC%B2%9C_%EB%A7%88%EB%B2%95_1.jpg" class="img-responsive" style="display: inline;" src="http://jstooza.com/skin/upload/%EC%A2%85%EB%AA%A9%EC%B6%94%EC%B2%9C_%EB%A7%88%EB%B2%95_1.jpg"></a>&nbsp;<a href="http://jstooza.com/bbs/bbs/?bbs_no=19" target="_self"><img title="%EC%A2%85%EB%AA%A9%EC%B6%94%EC%B2%9C_%EC%9D%B4%EC%9D%B5_%EC%B6%94%EC%B2%9C%EC%A4%91_.jpg" class="img-responsive" style="display: inline;" src="/skin/upload/%EC%A2%85%EB%AA%A9%EC%B6%94%EC%B2%9C_%EC%9D%B4%EC%9D%B5_%EC%B6%94%EC%B2%9C%EC%A4%91_.jpg"></a>&nbsp;<a style="background-color: rgb(255, 255, 255);" href="http://www.jstooza.com/bbs/bbs/view.php?bbs_no=10&amp;data_no=50" target="_self"><img title="%EA%B3%BC%EA%B1%B0_%EC%88%98%EC%9D%B5%EB%A5%A0_1.jpg" class="img-responsive" style="display: inline;" src="http://www.jstooza.com/skin/upload/%EA%B3%BC%EA%B1%B0_%EC%88%98%EC%9D%B5%EB%A5%A0_1.jpg"></a></p><p align="center" style="text-align: center; line-height: 1;"><a href="http://jstooza.com/bbs/bbs/?bbs_no=20" target="_self"><img src="http://jstooza.com/skin/upload/%EA%B3%B5%EC%A7%80%EC%86%8C_2.jpg" title="%EA%B3%B5%EC%A7%80%EC%86%8C_2.jpg" class="img-responsive" style="display: inline;"></a>&nbsp;<a href="http://jstooza.com/skin/page/QA.html" target="_self"><img src="http://jstooza.com/skin/upload/Q%26A%EC%86%8C_1.jpg" title="Q%26A%EC%86%8C_1.jpg" class="img-responsive" style="display: inline;"></a>&nbsp;<a href="http://pf.kakao.com/_xkxodMC" target="_self"><img src="http://jstooza.com/skin/upload/%EC%B9%B4%ED%86%A15_1.jpg" title="%EC%B9%B4%ED%86%A15_1.jpg" class="img-responsive" style="display: inline;"></a><span style="font-size: 7pt;">&nbsp;</span><a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=16&amp;data_no=520&amp;page_no=1&amp;sub_id=" target="_self"><img title="%EC%B5%9C%EA%B7%BC%EC%88%98%EC%9D%B5%EB%A5%A0_1.jpg" class="img-responsive" src="http://www.jstooza.com/skin/upload/%EC%B5%9C%EA%B7%BC%EC%88%98%EC%9D%B5%EB%A5%A0_1.jpg" style="display: inline;"></a></p><p align="center" style="text-align: center; line-height: 1;"><a style="background-color: rgb(255, 255, 255);" href="http://www.jstooza.com/bbs/bbs/?bbs_no=16" target="_self"></a></p><p align="center" style="text-align: center; line-height: 1;"><strong style="color: rgb(149, 16, 21); font-size: 7pt;"><img title="%ED%99%88%ED%94%BC_%EC%9C%97%EC%A4%84_3.png" class="img-responsive" style="display: inline;" src="http://jstooza.com/skin/upload/%ED%99%88%ED%94%BC_%EC%9C%97%EC%A4%84_3.png"></strong></p><div class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/"><img alt="LOGO" src="/skin/img/logo/logo_201711101510310585.jpeg" class="img-responsive"></a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+								<li id='m-40'><a href='https://blog.naver.com/jstooza' target='_self' class='m-40' >블로그공부방</a></li>
+<li id='m-38' class='dropdown'>
+<a href='#' target='_self' class='m-38 dropdown-toggle' data-toggle='dropdown'>투자전략 <b class='caret'></b></a>
+<ul class='dropdown-menu m-38_sub'>
+<li class='sub_link'><a href='/skin/page/jsmagic.html' target='_self' class='m-38' >마법공식 투자전략</a></li>
+<li class='sub_link'><a href='/skin/page/Magi.html' target='_self' class='m-38' >이익성장 투자전략</a></li>
+</ul>
+</li>
+<li id='m-21' class='dropdown'>
+<a href='#' target='_self' class='m-21 dropdown-toggle' data-toggle='dropdown'>종목추천 <b class='caret'></b></a>
+<ul class='dropdown-menu m-21_sub'>
+<li class='sub_link'><a href='/bbs/bbs/?bbs_no=25' target='_self' class='m-21' value='img_bbs_no=25'>마법공식 투자전략</a></li>
+<li class='sub_link'><a href='/bbs/bbs/?bbs_no=19' target='_self' class='m-21' value='img_bbs_no=19'>이익성장 투자전략</a></li>
+</ul>
+</li>
+<li id='m-37'><a href='/bbs/bbs/?bbs_no=16' target='_self' class='m-37' value='img_bbs_no=16'>수익률</a></li>
+<li id='m-18' class='dropdown'>
+<a href='#' target='_self' class='m-18 dropdown-toggle' data-toggle='dropdown'>공지/문의 <b class='caret'></b></a>
+<ul class='dropdown-menu m-18_sub'>
+<li class='sub_link'><a href='/bbs/bbs/?bbs_no=20' target='_self' class='m-18' value='img_bbs_no=20'>공지 게시판</a></li>
+<li class='sub_link'><a href='/skin/page/QA.html' target='_self' class='m-18' >Q&A 게시판</a></li>
+<li class='sub_link'><a href='/bbs/bbs/?bbs_no=7' target='_self' class='m-18' value='img_bbs_no=7'>문의 게시판</a></li>
+</ul>
+</li>
+
+                <li class="divider-vertical"></li>
+
+				<li><a href='/login.php?rq_url=%2Fskin%2Fpage%2Fjsmagic.html'>로그인</a></li><li><a href='/join.php?rq_url=%2Fskin%2Fpage%2Fjsmagic.html'>회원가입</a></li>							</ul>
+		</div>
+	</div>
+</div>
+<!-- Header Ends -->
+<p align="center" style="text-align: center; line-height: 1;">&nbsp;</p><script  language="JavaScript">
+    <!--
+        function  imageView(strImage)
+        {
+        this.document.images['mainImage'].src  =  strImage;
+        }
+    //-->
+	$(window).resize(function(){
+		$(".topmarginLay_a").css("height",$(".navbar-static-top").height());
+	});
+	$(window).ready(function(){
+		$(".topmarginLay_a").css("height",$(".navbar-static-top").height());
+	});
+	$(window).load(function(){
+		$(".topmarginLay_a").css("height",$(".navbar-static-top").height());
+	});
+</script>
+<div class="topmarginLay_a"></div>
+<div class="container sub-layout">
+<!-- Body -->
+<meta name="keywords" content=""><p>&nbsp;</p><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif; font-size: 12pt;"><p align="center" style="text-align: center;"><strong><span style="color: rgb(255, 255, 255); font-family: 나눔고딕, NanumGothic, Sans-serif; font-size: 24pt; background-color: rgb(119, 176, 43);"><span style="color: rgb(255, 255, 255); background-color: rgb(119, 176, 43);">1.마법공식</span>이란?</span></strong><span style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">&nbsp;</span></p><p align="center" style="text-align: center;">&nbsp;</p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">조엘그린블라트 교수의 마법공식을 소개해 드립니다.</span></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">이 방법은<span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></span></span></span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">가치투자 기법 중 한 가지 입니다. 즉 <span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>"싸게 사서 비싸게 파는 방법"</strong></span> 입니다<br></span><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">월가의 대가 워렌버핏의 </span><strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">장기누적 년평균 </span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">수익률 </span></strong><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">+<strong><span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">26&#37;</span></strong></span>를 넘어서는 <strong><span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">+40&#37;</span><span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"> 수익률</span></strong>의 </span></span><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">마법같은&nbsp;<span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">투자전략 </span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">입니다.</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><br></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"></span></span><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">조엘 그린블라트는 자산운용사를 창업한&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">1985년부터 20년간 <b><span style="color: rgb(149, 16, 21);">연평균 +40&#37;</span></b>의 경이로운 수익률을 올린 투자가입니다.&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">만약, 직장인 A씨가 30세 때 <b><span style="color: rgb(0, 117, 200);">단돈 1,000만원</span></b>을 그의 펀드에 넣었다면 50세 때 <b><span style="color: rgb(149, 16, 21);">84억원을 손에 쥘 수 있는</span></b></span></p></span><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif; font-size: 12pt;"><p align="center" style="text-align: center; line-height: 1.5;"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">믿기지&nbsp;않는 투자기법 입니다.&nbsp;</span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><img src="/skin/upload/&#37;EC&#37;9E&#37;91&#37;EC&#37;9D&#37;80&#37;EC&#37;B1&#37;85_&#37;EC&#37;84&#37;B1&#37;EA&#37;B3&#37;BC.png" title="&#37;EC&#37;9E&#37;91&#37;EC&#37;9D&#37;80&#37;EC&#37;B1&#37;85_&#37;EC&#37;84&#37;B1&#37;EA&#37;B3&#37;BC.png" class="img-responsive" style="display:inline;"><br style="clear:both;"><br style="clear:both;"><span style="font-size: 12pt; color: rgb(0, 0, 0);">&nbsp;</span><span style="font-size: 12pt; color: rgb(0, 0, 0);">&nbsp;주식시장을 이기는 작은책 - 6 Page</span></p><p align="center" style="text-align: center;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">단 아무기업을 사는 것이 아니라 <span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>우량한 기업</strong></span>이 일시적인 상황으로 인해 <span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>싸게 거래될 때</strong></span> 사서&nbsp; </span></p><p align="center" style="text-align: center;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">제 값을&nbsp;</span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">받고 파는 방법</span></strong>입니다 !</span></p><p align="center" style="text-align: center;"><span style="font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><div align="center" class="autosourcing-stub-extra-saved" style="text-align: center;"></div><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 24pt;"><b><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">일반개미들의 </span><span style="color: rgb(255, 255, 255); background-color: rgb(119, 176, 43);">무덤</span><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">! 주식시장</span></b></span></span></span></span></span></p><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 118, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 18pt;"></span></span></span></span></span><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 11pt;"><br></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">대한민국 주식투자자&nbsp;<span style="color: rgb(0, 117, 200);"><strong><span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">3&#37;<span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">만</span></span><span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"> <span style="color: rgb(149, 16, 21); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">시장을 이기는 수익</span></span></strong></span>을 얻는다고 합니다.&nbsp;<span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"> </span><strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">3&#37;내 드시나요?</span></strong>.. </span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">주식투자의 필요성은 절실히 느끼는데 공부할 시간은 없고 투자는 해야겠고.. 급등주, 테마주 따라 하시다가 </span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">최초 원금</span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">만</span></strong>이라도 <span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>되 돌렸으면 좋겠다</strong></span>고&nbsp;생각하고 </span></span></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">계시진 않나요? </span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><img title="&#37;EC&#37;A3&#37;BC&#37;EC&#37;8B&#37;9D&#37;EC&#37;8B&#37;A4&#37;ED&#37;8C&#37;A8_&#37;EA&#37;B0&#37;9C&#37;EB&#37;AF&#37;B8.png" class="img-responsive" style="display: inline;" src="/skin/upload/&#37;EC&#37;A3&#37;BC&#37;EC&#37;8B&#37;9D&#37;EC&#37;8B&#37;A4&#37;ED&#37;8C&#37;A8_&#37;EA&#37;B0&#37;9C&#37;EB&#37;AF&#37;B8.png"><img class="_photoImage" style="border-color: rgb(0, 0, 0); clear: both;" alt="" src="http://postfiles5.naver.net/MjAxNzAyMTZfMTQx/MDAxNDg3MjQ1MjY5OTMx.jF15qYVhSQAMqDmYHIUo4ljPsDCroWhuA_lgvqggY-og.r69s9xon6iN2lWysQd00FT3LXRZvdism7Xvkj955D8wg.PNG.jstooza/&#37;EC&#37;A3&#37;BC&#37;EC&#37;8B&#37;9D&#37;EC&#37;8B&#37;A4&#37;ED&#37;8C&#37;A8_&#37;EA&#37;B1&#37;B0&#37;EC&#37;A7&#37;80.png?type=w2"><br style="clear: both;"><br style="clear: both;"></span></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">주식시장에 참여 할때 공부하고 진입하는것도 중요하지만 <span style="color: rgb(0, 117, 200);"><strong>어떠한</strong> </span><strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">투자전략을 선택</span></strong><span style="color: rgb(0, 117, 200);"> </span>하느냐가 더욱 중요합니다 !</span></span></span><br style="clear: both;">&nbsp;</span></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span></span></p><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span></span></span></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 118, 200); font-size: 14pt;"><b></b></span></span></span></span></span><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 24pt;"><b><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">주식투자! 열심히 </span><span style="color: rgb(255, 255, 255); background-color: rgb(119, 176, 43);">공부</span><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">하면 성공할수 있다?</span></b></span></span></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 24pt;"><strong></strong></span></span></span></span></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;;"><br></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​8여년을 새벽 5시 일어나서 2시간 공부하고 6시 퇴근 후 내재가치Tool 만들고 휴일은 강연회 듣기도&nbsp;하고...</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">투자에 성공해 기필코 경제적 자유를&nbsp;얻어 <strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">평소 </span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">소홀했던 가족들에게 모두 보상하겠노라</span></strong>고 참 열심히 살았건만</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">투자철학도 만들고 경제력도 어느정도 자리를 잡아 가지만 <span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>애들은 이미 다 커버렸네요&nbsp;ㅎㅎ</strong></span></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp; 그래도 다행이라고 생각합니다. </span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp; 개미들 투자자들 대부분이 정말 열심히 하고도 경제력도, 가정도 어느 하나라도 </span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp; 좋아진게 없이 주식시장을 조용히</span></span></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"> 떠나는게 이 바닥의 무서움입니다. </span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp; 그래서 옛 어른들이 주식투자하면 패가망신 한다고 했나 봅니다.</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​&nbsp; </span></span></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">전업투자자가 아닌이상 <strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">본업과 투자를 병행해 성공한다는건 결코 쉬운게 아닙니다.</span></strong></span></span></span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 118, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 18pt;"><b></b></span></span></span></span></span></span></span></span><img title="&#37;EC&#37;A3&#37;BC&#37;EC&#37;8B&#37;9D&#37;EA&#37;B3&#37;B5&#37;EB&#37;B6&#37;80_&#37;EC&#37;97&#37;B4&#37;EA&#37;B3&#37;B5_1.png" class="img-responsive" style="display: inline;" alt="&#37;EC&#37;A3&#37;BC&#37;EC&#37;8B&#37;9D&#37;EA&#37;B3&#37;B5&#37;EB&#37;B6&#37;80_&#37;EC" src="http://www.jstooza.com/skin/upload/&#37;EC&#37;A3&#37;BC&#37;EC&#37;8B&#37;9D&#37;EA&#37;B3&#37;B5&#37;EB&#37;B6&#37;80_&#37;EC&#37;97&#37;B4&#37;EA&#37;B3&#37;B5_1.png"><br style="clear: both;">&nbsp;</span></p><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"></span><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><span style="font-size: 11pt;"></span><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><span></span><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><strong></strong><p align="center" style="text-align: center;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 24pt;"><strong><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">마법공식 투자&nbsp;해 봅시다! 근데 </span><span style="color: rgb(255, 255, 255); background-color: rgb(119, 176, 43);">장점이</span><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">?</span></strong></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><strong><span style="color: rgb(255, 255, 255); font-family: 나눔고딕, NanumGothic, Sans-serif; font-size: 24pt; background-color: rgb(119, 176, 43);"> </span></strong></span></span></span><span style="color: rgb(255, 255, 255); font-family: 나눔고딕, NanumGothic, Sans-serif; font-size: 24pt; background-color: rgb(119, 176, 43);">&nbsp;</span></p><p align="center" style="text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><br></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">마법공식은 국내 2,000여 상장사 중 0.25&#37;에 속하는 우수하나 염가인 종목을&nbsp;매수하는 방법으로 한번 사고나면 </span></span></span><span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">1년동안&nbsp;HTS를 쳐다도 보지 말 것을 주문합니다</span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span><br><span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">결국 그 남는 시간을 이용해 본업에 충실하고 가족행복과 자신의 개발을 추구 하다보면 1년후 </span></span></span></span><span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span><br></span><span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">년 평균 30~40&#37;수준</span><span style="color: rgb(0, 0, 0);">의 </span>마법같은 선물을&nbsp;얻을수 있으니&nbsp;<span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>자산증식</strong></span>과 <strong><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">가족의</span></strong><span style="color: rgb(0, 0, 0);"> </span><strong><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">행복&nbsp;</span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">두가지 모두&nbsp;얻을수 있습니다</span></strong></span></span><span><br></span></span></span></p><div align="center" class="autosourcing-stub-extra-saved" style="text-align: center;"></div><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>또 하나의 장점은&nbsp;</strong></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">인간의 감정이입 없이 <strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">기계적으로 투자하는 방법</span></strong>이기 때문에 <strong><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">시장변동에 </span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">부하뇌동 "실수"가 없습니다</span></strong></span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">주식투자를 <span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">전업</span>으로 하는 </span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">제야의 고수들</span> 조차도 좋은 수익을 얻은&nbsp;<span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">다음</span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">년도에는 어김없이 </span>찾아오는 </span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">자만심과, 나태함, 탐욕으로 인한&nbsp;</span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"><strong>치명적 실수</strong></span><span style="color: rgb(0, 117, 200);"> </span>즉, 레버리지 투자, 몰빵투자, 비가치투자로의 회기..등 장기 누적수익률에</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">큰 손실을 주게 되는데 <strong><span style="color: rgb(0, 117, 200);">마법공식</span><span style="color: rgb(0, 117, 200);">은 여기서</span><span style="color: rgb(0, 117, 200); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"> <span style="color: rgb(0, 117, 200);">완벽히 해방</span></span></strong>되어 있다고 할수 있습니다.</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, Sans-serif; font-size: 12pt; background-color: rgb(255, 255, 255);">&nbsp;</span><span style="font-size: 12pt; background-color: rgb(119, 176, 43);">​<span style="font-family: 나눔고딕, NanumGothic;"><span style="font-size: 11pt;"><span style="font-size: 11pt;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span style="color: rgb(255, 255, 255); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24pt; background-color: rgb(119, 176, 43);"><b>마법공식 투자대상은?</b></span></span></span></span></span></span></span><span style="color: rgb(0, 0, 0); font-size: 24pt;">&nbsp;</span></p></span><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px; text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic;"><span style="font-size: 11pt;"><br></span></span></p><span style="font-family: &quot;나눔고딕&quot;,NanumGothic,Sans-serif; font-size: 12pt;"><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-size: 12pt;"></span>주식연구에 많은시간을 투자하지 않고 <b><span style="color: rgb(0, 117, 200); font-size: 14pt;">년 20~30&#37;수익률을 원하는 투자자</span><span style="font-size: 14pt; color: rgb(0, 117, 200);">​</span></b></p></span><span style="font-size: 12pt;"><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-size: 12pt;">주식투자 연구에 많은 시간을 투자할수 없는 <span style="color: rgb(0, 117, 200); font-size: 14pt;"><b>직장인, 중소사업인, 주부</b></span></span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"></span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-size: 12pt;">여러 투자전략을 해보았으나 결국 손실을 회복하기 힘든 <span style="color: rgb(0, 117, 200); font-size: 14pt;"><b>손실투자자</b></span></span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-size: 12pt;">&nbsp;</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​<span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 24pt;"><b><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">마법공식&nbsp;</span><span style="color: rgb(255, 255, 255); background-color: rgb(119, 176, 43);">어떻게</span><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);"> 투자 하나요?</span></b></span></span></span></span></span></span></span></span></span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 24pt;">&nbsp;</span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span><span style="color: rgb(0, 118, 200); font-size: 14pt;"><b><br></b></span></span></span></span></span></span></span></span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic;"><span style="font-size: 11pt;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic; font-size: 11pt;"><br></span></span></span></p><p align="center" style="text-align: center; line-height: 1.5;"><font face="나눔고딕, NanumGothic, Sans-serif">그냥 여기사이트에서 제시하는데로 1년에 4번 사라면 사고 4번 팔라면 팔면 됩니다.</font></p><p align="center" style="text-align: center; line-height: 1.5;"><font face="나눔고딕, NanumGothic, sans-serif">주식공부하고 신경쓸 시간에 본업에 충실하며 행복의 추억을 쌓아 나가면 수익은 따라 올것 입니다</font></p><p align="center" style="text-align: center; line-height: 1.5;"><font face="나눔고딕, NanumGothic, sans-serif"><br></font></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">분기실적이 마감된 후 가치지표를 기준으로 2,000여 종목을 스크리닝&nbsp;Tool로 검색해 보면&nbsp;통상&nbsp;<strong><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">3~8종목 </span></strong><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">이 매수추천 </span></span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">종목으로 올라 옵니다. </span></span><span style="color: rgb(0, 0, 0); font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;그 추천종목을 분기 투자자산으로 균등하게 배분해 매수하면 그걸로 전부 입니다</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center; line-height: 1.5;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">매수는 분기 실적이 마감된 직후&nbsp;아래와 같이 1년에 4회&nbsp;매수군으로 검색된 종목을 매수 예정일에 매수 합니다</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-size: 12pt;">&nbsp;</span></p><div align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><p><img src="/skin/upload/&#37;EB&#37;A7&#37;A4&#37;EC&#37;88&#37;98&#37;EC&#37;98&#37;88&#37;EC&#37;A0&#37;95&#37;EC&#37;9D&#37;BC_1.png" title="&#37;EB&#37;A7&#37;A4&#37;EC&#37;88&#37;98&#37;EC&#37;98&#37;88&#37;EC&#37;A0&#37;95&#37;EC&#37;9D&#37;BC_1.png" class="img-responsive" style="display:inline;"><br style="clear:both;"><span style="font-size: 12pt;">※ 매월 적립식으로 투자하시는 분들을 위해 매월 말일쯤 비정기로 추천 하고있으니 참고하세요</span><span style="font-size: 12pt;">​</span><span style="font-size: 12pt;">&nbsp;</span></p></div><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-size: 12pt;">&nbsp;</span></p></span><span style="font-size: 12pt;"><span style="font-family: 나눔고딕, NanumGothic;"><span style="font-size: 11pt;"><span></span></span></span><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">​매도는 각 분기마다 매수한 종목이 1년 도래 되면 일괄 매도가 원칙입니다</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">통상 3~8종목 중 <strong><span style="color: rgb(0, 117, 200);">200&#37;이상 대박종목이 나오는데 ​전체 수익률을 년평균 +30~40&#37;&nbsp;수익률로 </span></strong>안겨 줍니다.</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"></span>이 모든 과정을 가입하신 휴대전화 문자로 알려 드리니 그냥 따라 하시기만 하면 됩니다</p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-size: 12pt;">&nbsp;</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-size: 12pt;">​</span></p><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-size: 12pt;">&nbsp;</span></p></span><span style="font-size: 12pt;"><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;"></span>​<span style="font-family: 나눔고딕, NanumGothic;"><span style="font-size: 11pt;"><span style="font-size: 11pt;"><span style="font-size: 11pt;"><span style="color: rgb(0, 118, 200);"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 24pt;"><b><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">자산배분은 </span><span style="color: rgb(255, 255, 255); background-color: rgb(119, 176, 43);">어떻게&nbsp;</span></b></span></span></span></span></span></span><span style="font-size: 12pt; background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">​</span><b style="color: rgb(0, 0, 0); font-size: 32px;"><span style="background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">하나요?</span></b><span style="font-size: 12pt; background-color: rgb(119, 176, 43); color: rgb(255, 255, 255);">​</span></p></span><span style="font-size: 12pt;"><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;">&nbsp;</p></span><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"></span><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"></span><span style="font-size: 12pt; font-family: NanumBarunGothic, 나눔고딕, NanumGothic, &quot;맑은 고딕&quot;, &quot;Malgun Gothic&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;">아래 챠트같이 총자산이 4백만원이 있다면 이번 1분기에 100만원을 투자를 하면 되요</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">그런데 추천종목이(4월5일경 최종 추천됩니다) 아래같이 4종목이면 100만원/4종목 = 25만원씩 투자를 하시면 됩니다</span><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><img src="/skin/upload/&#37;EC&#37;A0&#37;95&#37;EC&#37;84&#37;9D&#37;EC&#37;9D&#37;98_&#37;EB&#37;A7&#37;88&#37;EB&#37;B2&#37;95&#37;EA&#37;B3&#37;B5&#37;EC&#37;8B&#37;9D_&#37;ED&#37;88&#37;AC&#37;EC&#37;9E&#37;90&#37;EC&#37;9E&#37;90&#37;EC&#37;82&#37;B0_&#37;EB&#37;B0&#37;B0&#37;EB&#37;B6&#37;84&#37;EC&#37;A0&#37;84&#37;EB&#37;9E&#37;B5_2.png" title="&#37;EC&#37;A0&#37;95&#37;EC&#37;84&#37;9D&#37;EC&#37;9D&#37;98_&#37;EB&#37;A7&#37;88&#37;EB&#37;B2&#37;95&#37;EA&#37;B3&#37;B5&#37;EC&#37;8B&#37;9D_&#37;ED&#37;88&#37;AC&#37;EC&#37;9E&#37;90&#37;EC&#37;9E&#37;90&#37;EC&#37;82&#37;B0_&#37;EB&#37;B0&#37;B0&#37;EB&#37;B6&#37;84&#37;EC&#37;A0&#37;84&#37;EB&#37;9E&#37;B5_2.png" class="img-responsive" style="display:inline;"><br style="clear:both;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">​</span><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">종잣돈이나 기존투자를 하시는 분은 1년 4</span><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">분기를 나누어 위와 같이 투자를 설계 하시면 됩니다.</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">혹,&nbsp;</span><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px;">매월 캐시가 창출되시는 분들을 위해 비정기로 매월 추천하고 있으니</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px;"> 월 10만원이라도 적립식으로 투자를 진행하시어 장기간의 복리를 이용해 미래의 부를 모두 이루시기 바랍니다.</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px;">(하루 담배한갑,커피전문점 커피한잔 줄이면 <b><span style="color: rgb(0, 117, 200);">10년차</span></b>에 <span style="color: rgb(255, 0, 0); font-size: 14pt;"><b>2억의 자산</b></span>이, <span style="color: rgb(0, 117, 200);"><b>20년차</b></span>엔 <b><span style="color: rgb(255, 0, 0); font-size: 14pt;">누구나 부자가 될수</span> </b>있습니다)</span></p><p align="center" style="text-align: center; line-height: 1.5;"><font color="#000000" face="나눔고딕, NanumGothic, sans-serif"><span style="font-size: 16px;"><img src="/skin/upload/&#37;EC&#37;88&#37;9C&#37;ED&#37;99&#37;98&#37;EC&#37;A0&#37;81&#37;EB&#37;A6&#37;BD&#37;EC&#37;8B&#37;9D_&#37;ED&#37;88&#37;AC&#37;EC&#37;9E&#37;90_12&#37;EA&#37;B0&#37;9C&#37;EC&#37;9B&#37;94_1.png" title="&#37;EC&#37;88&#37;9C&#37;ED&#37;99&#37;98&#37;EC&#37;A0&#37;81&#37;EB&#37;A6&#37;BD&#37;EC&#37;8B&#37;9D_&#37;ED&#37;88&#37;AC&#37;EC&#37;9E&#37;90_12&#37;EA&#37;B0&#37;9C&#37;EC&#37;9B&#37;94_1.png" class="img-responsive" style="display:inline;"><br style="clear:both;"><br></span></font></p><p align="center" style="text-align: center; line-height: 1.5;">&nbsp;</p><p align="center" style="text-align: center; line-height: 1.5;"><font color="#000000" face="나눔고딕, NanumGothic, sans-serif"><span style="font-size: 16px;"><b><span style="font-size: 14pt; color: rgb(0, 117, 200);">적립식투자의 위력</span></b> <a href="http://jstooza.com/bbs/bbs/view.php?bbs_no=18&amp;data_no=134&amp;page_no=1&amp;sub_id=">http://jstooza.com/bbs/bbs/view.php?bbs_no=18&amp;data_no=134&amp;page_no=1&amp;sub_id=</a></span></font><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">​</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">&nbsp;</span></p><span style="font-size: 12pt;"><p align="center" style="font-family: 나눔고딕, NanumGothic, sans-serif; text-align: center;"><span style="color: rgb(0, 0, 0); font-size: 12pt;">여하튼 호흡을 길게 가져가면서 시간을 내편으로 만들고 복리의 마법을 이용하는게 여기 사이트의 취지입니다</span><span style="font-family: &quot;나눔고딕&quot;, NanumGothic, &quot;Sans-serif&quot;; font-size: 12pt;">&nbsp;</span></p><p align="center" style="text-align: center;">&nbsp;</p><p align="center" style="text-align: center;"><font face="나눔고딕, NanumGothic, Sans-serif"></font><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">우보천리 ♬​</span><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;">&nbsp;♪ 즐겁게 ~</span></strong></p><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><br></span></strong></p><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><br></span></strong></p><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><br></span></strong></p><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><br></span></strong></p><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"></span></strong></p></span><h1 align="center" style="font-size: 40px; font-weight: 700; color: rgb(51, 51, 51); text-align: center;"><strong style="font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><span style="color: rgb(255, 255, 255); font-size: 24pt; background-color: rgb(255, 167, 0);"><a href="http://jstooza.com/skin/page/Magi.html" target="_self"><span style="background-color: rgb(255, 255, 255); color: rgb(149, 16, 21); font-size: 18pt;"><u>이익성장 투자전략은??? [클릭]</u></span></a></span></strong></h1><span style="font-size: 12pt;"><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><br></span></strong></p><p align="center" style="text-align: center;">&nbsp;</p><p align="center" style="text-align: center;"><strong style="font-size: 12px;"><span style="color: rgb(0, 117, 200); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 12pt;"><br></span></strong></p><p align="center" style="text-align: center;">&nbsp;</p></span></div><!-- Modal -->
+<div class="modal" id="img_sum_modal" tabindex="-1" aria-hidden="true" style="display: none;">
+
+                <input type="hidden" class="now_img" value="1">
+        <div id="" class="modal-content_img_view" style="width:100%;background-color:#000000;margin:0">
+            <center>
+                <input type="hidden" class="img_bbs_no">
+                <!-- Slide Image -->
+                <table class="images_sum_main_table" style="background-color:#FFFFFF;text-align: center">
+                    <tr>
+                        <td>
+                            <img class="images_sum_main" src="" style="margin:4px 10px" alt="main images">
+                            <br>
+                            <table width="100%"><tr><td width="50%"></td><td><a class="pre_img" href="#" style="color:#000000;"><span class="glyphicon glyphicon-chevron-left"></span></a></td>
+			    <td><a class="" href="#" data-dismiss="modal" style="color:#000000;"><span class="glyphicon glyphicon-remove-sign btn-lg"></span></a></td>
+			    <td><a class="next_img" href="#"><span class="glyphicon glyphicon-chevron-right" style="color:#000000;"></span></a></td><td width="50%"></td></tr></table>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+
+
+                <a class="carousel-control left pre_img" href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="carousel-control right next_img" href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+
+    </div>
+</div>
+<!-- Modal -->
+<script type="text/javascript">
+    $(".dh-front-gallery .col-md-3 a.thumbnail").height($(".dh-front-gallery .col-md-3 a.thumbnail").width()*0.7);
+    $(".pull-center.dh-popup").css("left",($(window).width()-$(".pull-center.dh-popup").width())/2);
+    $(window).resize(function(){
+    $(".dh-front-gallery .col-md-3 a.thumbnail").height($(".dh-front-gallery .col-md-3 a.thumbnail").width()*0.7);
+	$(".pull-center.dh-popup").css("left",($(window).width()-$(".pull-center.dh-popup").width())/2);
+    });
+
+    $(".intro-widgetbox .col-xs-3 a.thumbnail").height($(".intro-widgetbox .col-xs-3 a.thumbnail").width()*0.7);
+    $(".pull-center.dh-popup").css("left",($(window).width()-$(".pull-center.dh-popup").width())/2);
+    $(window).resize(function(){
+    $(".intro-widgetbox .col-xs-3 a.thumbnail").height($(".intro-widgetbox .col-xs-3 a.thumbnail").width()*0.7);
+	$(".pull-center.dh-popup").css("left",($(window).width()-$(".pull-center.dh-popup").width())/2);
+    });
+
+	function sendFile(file,editor,welEditable) {
+	    data = new FormData();
+	    data.append("file", file);
+	    $.ajax({
+		data: data,
+		type: "POST",
+		url: "/saveimage.php",
+		cache: false,
+		contentType: false,
+		processData: false,
+		success: function(url) {
+			editor.insertImage(welEditable, url);
+		}
+	    });
+	}
+
+    $.ajax({
+		type: "get",
+		url: "/imggallery.php",
+		data: "img_bbs_no=4&page_no="+$(".now_page").val(),
+		success: function(msg){
+				$(".images_sum").html(msg);
+		}
+	});
+    $(".pre_page").click(function(){
+        if($(".now_page").val()!=1){
+            var im_page_no = $(".now_page").val();
+            im_page_no--;
+            $(".now_page").val(im_page_no);
+            $.ajax({
+                type: "get",
+                url: "/imggallery.php",
+                data: "img_bbs_no=4&page_no="+$(".now_page").val(),
+                success: function(msg){
+                        $(".images_sum").html(msg);
+                }
+            });
+        }
+    });
+    $(".next_page").click(function(){
+        var im_page_no = $(".now_page").val();
+        im_page_no++;
+        $(".now_page").val(im_page_no);
+        $.ajax({
+            type: "get",
+            url: "/imggallery.php",
+            data: "img_bbs_no=4&page_no="+$(".now_page").val(),
+            success: function(msg){
+                    $(".images_sum").html(msg);
+            }
+        });
+    });
+
+
+
+    $(".pre_img").click(function(){
+        var im_page_no = $(".now_img").val();
+        im_page_no--;
+        $(".now_page").val(im_page_no);
+        $.ajax({
+            type: "get",
+            url: "/imggallery.php",
+            data: "img_bbs_no="+$(".img_bbs_no").val()+"&mode=pre&img_no="+$(".now_img").val()+"&page_no="+$(".now_page").val(),
+            success: function(msg){
+
+                $(".pre_img").css("display","none");
+                $(".next_img").css("display","none");
+                var msg_arr = msg.split("as12gf");
+                $(".images_sum_main").attr("src",msg_arr[1]);
+                $(".now_img").val(msg_arr[0]);
+                $(".images_sum_main").css("height","");
+                $(".images_sum_main").css("width","");
+                if($(".images_sum_main").height()*$(window).width()>=$(".images_sum_main").width()*$(window).height()){
+                    $(".images_sum_main").css("height",$(window).height()-20);
+                }else{
+                    $(".images_sum_main").css("width",$(window).width()-60);
+                }
+                $(".images_sum_main_table").css("margin-top",($(".modal-content_img_view").height()-$(".images_sum_main").height()-40)/2+"px");
+                $(".pre_img").css("display","block");
+                $(".next_img").css("display","block");
+
+            }
+        });
+    });
+    $(".next_img").click(function(){
+        var im_page_no = $(".now_img").val();
+        im_page_no++;
+        $(".now_page").val(im_page_no);
+        $.ajax({
+            type: "get",
+            url: "/imggallery.php",
+            data: "img_bbs_no="+$(".img_bbs_no").val()+"&mode=next&img_no="+$(".now_img").val()+"&page_no="+$(".now_page").val(),
+            success: function(msg){
+                $(".pre_img").css("display","none");
+                $(".next_img").css("display","none");
+                var msg_arr = msg.split("as12gf");
+                $(".images_sum_main").attr("src",msg_arr[1]);
+                $(".now_img").val(msg_arr[0]);
+                $(".images_sum_main").css("height","");
+                $(".images_sum_main").css("width","");
+                if($(".images_sum_main").height()*$(window).width()>=$(".images_sum_main").width()*$(window).height()){
+                    $(".images_sum_main").css("height",$(window).height()-20);
+                }else{
+                    $(".images_sum_main").css("width",$(window).width()-60);
+                }
+                $(".images_sum_main_table").css("margin-top",($(".modal-content_img_view").height()-$(".images_sum_main").height()-40)/2+"px");
+                $(".pre_img").css("display","block");
+                $(".next_img").css("display","block");
+            }
+        });
+    });
+
+
+
+
+    function ch_main_img(img_bbs_no,data_no,src){
+        $(".images_sum_main").css("max-height",$(window).height()-50);
+        $(".modal-content_img_view").css("height",$(window).height());
+        $(".pre_img").css("display","none");
+        $(".next_img").css("display","none");
+        if(data_no==$(".first_img").val()){
+            $(".pre_img").css("display","none");
+        }
+        $(".img_bbs_no").val(img_bbs_no);
+        $(".now_img").val(data_no);
+        $(".images_sum_main").attr("src",src);
+        $("#img_sum_modal").show();
+        $(".images_sum_main").css("height","");
+        $(".images_sum_main").css("width","");
+        if($(".images_sum_main").height()*$(window).width()>=$(".images_sum_main").width()*$(window).height()){
+            $(".images_sum_main").css("height",$(window).height()-20);
+        }else{
+            $(".images_sum_main").css("width",$(window).width()-60);
+        }
+        $(".images_sum_main_table").css("margin-top",($(".modal-content_img_view").height()-$(".images_sum_main").height()-40)/2+"px");
+        $(".pre_img").css("display","block");
+        $(".next_img").css("display","block");
+    }
+
+
+    $(window).resize(function(){
+        $(".images_sum_main").css("height","");
+        $(".images_sum_main").css("width","");
+        if($(".images_sum_main").height()*$(window).width()>=$(".images_sum_main").width()*$(window).height()){
+            $(".images_sum_main").css("height",$(window).height()-20);
+        }else{
+            $(".images_sum_main").css("width",$(window).width()-40);
+        }
+        $(".images_sum_main_table").css("margin-top",($(".modal-content_img_view").height()-$(".images_sum_main").height()-40)/2+"px");
+        $(".images_sum_main").css("max-height",$(window).height()-60);
+        $(".modal-content_img_view").css("height",$(window).height());
+    });
+
+</script>
+
+
+<script type="text/javascript" language="javascript">
+
+	$(window).load(function(){
+		setTimeout(function(){
+			$(".uneven div div div").height($(".uneven div div div").width()*0.7);
+			$(".slick-list.draggable").height($(".uneven div div div").height+2);
+			$(".slick-track").height($(".uneven div div div").width()*0.7);
+		},300);
+    });
+
+    $(window).resize(function(){
+		$(".uneven div div div").height($(".uneven div div div").width()*0.7);
+		$(".slick-list.draggable").height($(".uneven div div div").height+2);
+		$(".slick-track").height($(".uneven div div div").width()*0.7);
+    });
+
+
+//jQuery(function( $ ) {
+	$(document).ready(function(){
+    $('#freewall a').tosrus({
+		caption    : {
+			add        : true
+		},
+		slides    : {
+			load        : 'near-visible'
+		},
+		wrapper    : {
+		   classes    : "img-border"
+		},
+		infinite : true,
+	});
+
+});
+</script></div>
+<div class="container footer-social-layout">
+	<div class="row">
+    <div class="col-lg-12 text-center warning socialArea">
+        <a href="https://www.facebook.com/jstooza/" target="_blank"><button class="btn btn-link"><img src="/img/facebook.png" height="30px" alt="facebook" title="facebook"></button></a>                        <!--<a href="#" target="_blank"><button class="btn btn-link"><img src="/img/kakaotalk.jpg" height="30px" alt="kakaotalk" title="kakaotalk"></button></a>-->
+        <a href="#" target="_blank"><button class="btn btn-link"><img src="/img/kastory.png" height="30px" alt="kakaostory" title="kakaostory"></button></a>                        <a href="http://instagram.com/" target="_blank"><button class="btn btn-link"><img src="/img/insta.png" height="30px" alt="instagram" title="instagram"></button></a>        <a href="http://yellowid.kakao.com" target="_blank"><button class="btn btn-link"><img src="/img/yellowid.png" height="30px" alt="yellow ID" title="yellow ID"></button></a>    </div>
+</div>
+		</div>
+</div>
+</div>
+
+
+</div></div></div>
+<!-- Body End -->
+
+<!-- Footer Starts-->
+
+
+<div class="footer_copy">
+    <div class="col-lg-12 text-center">
+    <p>Copyright(c) 2016 Company Inc, All rights reserved, Contact Us <br>
+사업자등록번호 : 570-19-00379 유사투자자문업 신고(필) 정석투자연구소 TEL : 010-7213-3500 E_Mail : jstooza@gmail.com</p><br>powered by <strong>www.jstooza.com</strong><br>
+    </div>
+</div>
+
+<!-- Scroll To Top -!->
+<span class="top"><a href="#"> <i class="fa fa-chevron-up"></i> </a></span>
+<!-- Footer Ends -->
+<!--<footer>
+    <div class="container">
+        <div class="row text-center">
+            <h6><span style="color:#FFFFFF"><div></div>powered by <strong>www.jstooza.com</strong><br>
+</span></h6>
+        </div>
+    </div>
+</footer>-->
+
+<script type="text/javascript">
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+
+<meta http-equiv="X-UA-Compatible" content="IE=8" >
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>:: 마법 공식 :: SelfFund.co.kr </title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<script language="javascript" type="text/javascript" src="/common/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="/common/js/AC_RunActiveContent.js"></script>
+<link rel="stylesheet" type="text/css" href="/common/css/css.css">
+</head>
+<link rel="stylesheet" type="text/css" href="/common/calendar/calendar.css">
+<script language="javascript" src="/common/calendar/calendar.js"></script>
+<link rel="stylesheet" type="text/css" href="/common/webPonent/css/webponent.grid.css">
+<link rel="stylesheet" type="text/css" href="/common/webPonent/css/webponent.grid.flat.css">
+
+<script src="/common/webPonent/external/jquery-1.11.1.min.js"></script>
+<script src="/common/webPonent/external/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/common/webPonent/external/jquery.mousewheel.min.js"></script>
+<script src="/common/webPonent/external/underscore-min.js"></script>
+<script src="/common/webPonent/webponent.grid.js"></script>
+<script language=JavaScript>
+	function preMove() {
+		location.href = 'http://www.selffund.co.kr/stockInfo/StockAnalysis.asp';
+	}
+</script>
+<!--//s//--->
+<body topmargin="0" leftmargin="0" bgcolor="#B586EC">
+<div id=calendar style="position:absolute;left:0;top:0;visibility: hidden; z-index: 100;"></div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="199" background="../img/include/bg_r_sub1.gif"><table width="1041" height="199" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td bgcolor="#FFFFFF" style="line-height:0;"><img src="/images/topmenu/stockanalysis_top.jpg" alt="" usemap="#stockanalysis_top"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="68" background="../img/include/bg_m_sub1.gif" class="" style="line-height:0;">
+	<div class="" style="">
+			<ul style="list-style:none; margin:0; padding:0; overflow:hidden;">
+				<li style="float:left;">
+					<img src="/images/topmenu/stockanalysis_menu.jpg" alt="" usemap="#stockanalysis_topmenu">
+				</li>
+			</ul>
+		</div>
+	</td>
+	</td>
+  </tr>
+</table>
+<map name="stockanalysis_top">
+	<area shape="rect" coords="37,18,214,69" href="/" >
+</map>
+<map name="stockanalysis_topmenu">
+	<area shape="rect" coords="52,8,164,60" href="/community/board/BoardAllRead.asp?BoardID=1653&BoardInfoID=1&Page=1" >
+	<area shape="rect" coords="169,8,283,60" href="/stockInfo/MagicFormulaWp.asp" >
+	<area shape="rect" coords="297,8,378,60" href="/stockinfo/stockanalysisWp.asp" >
+	<area shape="rect" coords="408,8,488,60" href="/stockinfo/stockmeasuringWp.asp" >
+	<area shape="rect" coords="519,8,610,60" href="/corpinfo/corpinfomain.asp" >
+	<area shape="rect" coords="634,8,719,60" href="/community/board/BoardAllList.asp" >
+	<area shape="rect" coords="728,8,823,60" href="/investhistory/investadminhistory.asp" >
+	<area shape="rect" coords="838,8,931,60" href="/mypage/myinfo.asp" >
+</map>
+<style>
+	.m_nav{display:none;}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="1113" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="1010" valign="top" bgcolor="#FFFFFF"><table width="1010" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="bodyt"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="32" align="right" valign="top" style="padding-top:7px;"><table width="92%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+							<td>
+								<img src="../img/btn_pre_move.gif" border="0" style="cursor:hand;" onclick="preMove()">
+							</td>
+							<td align="left" class="menu_so" style="padding-right:6px;padding-top:3px;">&nbsp;&nbsp;
+								<a href="/community/board/BoardAllRead.asp?BoardID=22345&BoardInfoID=1&Page=1&SearchType=&SearchKey=">
+									<font color="777777" style="font-size:12px;">※ 안내: IE 11 사용시 "도구->호환성 보기 설정"에서 "이 웹사이트 추가"를 반드시 하시기 바랍니다.(상세내용 공지사항 참고)</font>
+								</a>
+							</td>
+                            <td align="right" class="menu_so" style="padding-right:10px;"><font color="777777"><img src="../img/investhistory/add.gif" width="10" height="5" align="absmiddle">Home &gt; 조합적분석</font></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td align="center"> <table width="850" border="0" cellpadding="0" cellspacing="0" class="mgb10">
+                          <tr>
+                            <td> <form method="post" id="frm" name="frm" style="margin: 0;">
+                                <table width="850" height="116" border="0" cellpadding="0" cellspacing="0" background="../img/magic/table_bg.gif" >
+                                  <tr>
+                                    <td height="23" style="padding:3px 15px 0px 18px;"><table width=100% border="0" cellspacing="0" cellpadding="2">
+                                        <tr>
+                                          <td width=35><img src="../img/magic/table_name1.gif" width="55" height="15"></td>
+                                          <td width=165> <input id="sCorpname" name="sCorpname" type="text" style="width:165px;" class="formbg"><br>
+											<div id='id_layer' style='position:absolute; width:165px; display:none; padding:0px; Z-INDEX:10;'>
+                                              <table width="100%" border=0 cellpadding=0 cellspacing=0>
+                                                <tr>
+                                                  <td id="id_detail"></td>
+                                                </tr>
+                                              </table>
+                                            </div></td>
+                                          <td width=19><a href="javascript:search();"><img src="../img/magic/bt_go.gif" width="47" height="20" border="0"></a></td>
+                                          <td width="*" align="right"><img name="btnExcel" src="../img/magic/bt_excel_print.gif" border="0" style="cursor:hand" onclick="ConvertExcel()">&nbsp;
+
+ <img name="btnInvest" src="../img/magic/bt_investw.gif" border="0" style="cursor:hand" onclick="javascript:alert('유료회원 메뉴입니다.');">&nbsp;<img name="btnInter" src="../img/magic/bt_interw.gif" border="0" style="cursor:hand" onclick="javascript:alert('유료회원 메뉴입니다.');">
+
+											</td>
+                                        </tr>
+                                      </table></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td height="25" style="padding:0px 3px 2px 15px;"><table border="0" cellspacing="0" cellpadding="2">
+                                        <tr height=30>
+                                          <td width="28"><img src="../img/magic/table_name2.gif" width="28" height="11"></td>
+                                          <td width="110">
+
+
+<input name="searchDate" type="text" size="13" value="2019-02-01" readonly class="formbg">&nbsp;
+
+
+
+										  </td>
+                                          <td width="15"><img src="../img/magic/table_td.gif" width="15" height="13"></td>
+                                          <td width="20"><img src="../img/magic/table_name3.gif" width="20" height="11"></td>
+                                          <td width="89"><select name="cboMarket">
+                                              <option value="0" selected>전체(권장)</option>
+                                              <option value="1">코스피</option>
+                                              <option value="2">코스닥</option>
+                                            </select></td>
+                                          <td width="15"><img src="../img/magic/table_td.gif" width="15" height="13"></td>
+                                          <td width="19"><img src="../img/magic/table_name4.gif" width="19" height="11"></td>
+                                          <td width="91">
+											<select name="cboCategory">
+                                              <option value="0">전체(권장)</option>
+                                              <option value="금융업">금융업</option>
+                                              <option value="기계">기계</option>
+                                              <option value="보험">보험</option>
+                                              <option value="서비스업">서비스업</option>
+                                              <option value="섬유,의복">섬유,의복</option>
+                                              <option value="신금업">신금업</option>
+                                              <option value="여신금융업">여신금융업</option>
+                                              <option value="운수장비">운수장비</option>
+                                              <option value="유통업">유통업</option>
+                                              <option value="은행업">은행업</option>
+                                              <option value="음식료품">음식료품</option>
+                                              <option value="의약품">의약품</option>
+                                              <option value="전기전자">전기전자</option>
+                                              <option value="제조업">제조업</option>
+                                              <option value="증권">증권</option>
+                                              <option value="지주회사">지주회사</option>
+                                              <option value="철강및금속">철강및금속</option>
+                                              <option value="화학">화학</option>
+                                              <option value="IT">IT</option>
+											  <option value="항공운송업">항공운송업</option>
+											  <option value="통신업">통신업</option>
+											  <option value="도매업">도매업</option>
+											  <option value="건설업">건설업</option>
+											  <option value="기타서비스">기타서비스</option>
+                                            </select></td>
+                                          <td width="15"><img src="../img/magic/table_td.gif" width="15" height="13"></td>
+                                          <td width="38"><img src="../img/magic/table_name5.gif" width="38" height="11"></td>
+                                          <td width="175">
+										    <select name="cboAsset">
+                                              <option value="0">전체</option>
+                                              <option value="1">시가총액 300억 이상</option>
+                                              <option value="2" selected>시가총액 500억 이상(권장)</option>
+                                              <option value="3">시가총액 1000억 이상</option>
+											  <option value="4">시가총액 2000억 이상</option>
+											  <option value="5">시가총액 5000억 이상</option>
+											  <option value="6">시가총액 1조 이상</option>
+											  <option value="7">시가총액 2조 이상</option>
+                                            </select></td>
+                                          <td width="95">&nbsp;</td>
+                                          <td width="90" align="left" style="padding-left:5px;"><a href="#." Onclick="javascript:go_search(document.all.searchDate.value);"><img src="../img/magic/bt_search.gif" width="71" height="23" border="0"></a></td>
+                                        </tr>
+                                      </table></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="25" style="padding:0px 15px 6px 15px;"><table border="0" cellspacing="0" cellpadding="2">
+                                        <tr height=30>
+                                          <td><img src="../img/magic/table_name6.gif" width="38" height="12"></td>
+                                          <td ><select name="cboOrder">
+                                              <option value="1" selected>PER (Daily) 순위</option>
+                                              <option value="2">PBR (Daily) 순위</option>
+                                              <option value="3">ROA (4Q) 순위</option>
+                                              <option value="4">ROE (4Q) 순위</option>
+                                              <option value="5">영업이익율 (4Q AVG) 순위</option>
+                                              <option value="6">경상이익율 (4Q AVG) 순위</option>
+                                              <option value="7">당기순이익율 (4Q AVG) 순위</option>
+                                              <option value="8">부채비율 (4Q AVG) 순위</option>
+                                              <option value="9">유보율 (4Q AVG) 순위</option>
+                                              <option value="0">PER+ROA 순위</option>
+                                              <option value="10">PER+ROE 순위</option>
+                                              <option value="11">PER+PBR 순위</option>
+                                              <option value="12">PER+부채비율 순위</option>
+                                              <option value="13">ROA+ROE 순위</option>
+                                              <option value="14">ROA+PBR 순위</option>
+                                              <option value="15">ROA+부채비율 순위</option>
+                                              <option value="16">ROE+PBR 순위</option>
+                                              <option value="17">ROE+부채비율 순위</option>
+                                              <option value="18">PBR+부채비율 순위</option>
+                                              <option value="19">PER+ROA+ROE 순위</option>
+                                              <option value="20">PER+ROA+PBR 순위</option>
+                                              <option value="21">PER+ROA+부채비율 순위</option>
+                                              <option value="22">PER+ROE+PBR 순위</option>
+                                              <option value="23">PER+ROE+부채비율 순위</option>
+                                              <option value="24">PER+PBR+부채비율 순위</option>
+                                              <option value="25">ROA+ROE+PBR 순위</option>
+                                              <option value="26">ROA+ROE+부채비율 순위</option>
+                                              <option value="27">ROA+PBR+부채비율 순위</option>
+                                              <option value="28">ROE+PBR+부채비율 순위</option>
+                                              <option value="36">PER+ROA+ROE+PBR</option>
+                                              <option value="29">PER+ROA+ROE+PBR+부채비율 순위</option>
+                                              <option value="30">PER+ROE+영업이익율 순위</option>
+                                              <option value="31">PER+ROE+경상이익율 순위</option>
+                                              <option value="32">PER+ROE+당기순이익율 순위</option>
+                                              <option value="33">PER+ROA+영업이익율 순위</option>
+                                              <option value="34">PER+ROA+경상이익율 순위</option>
+                                              <option value="35">PER+ROA+당기순이익율순위</option>
+                                            </select></td>
+                                          <td><img src="../img/magic/table_td.gif" width="15" height="13"></td>
+                                          <td><table border="0" cellspacing="0" cellpadding="2">
+                                              <tr>
+                                                <td><img src="../img/magic/table_name7.gif" width="83" height="13"></td>
+                                                <td><input type="checkbox" name="capital" value="1" checked></td>
+                                                <td><img src="../img/magic/table_td.gif" width="15" height="13"></td>
+                                                <td><img src="../img/magic/table_name8.gif" width="19" height="9"></td>
+                                                <td> <select id="PER" name="per">
+                                                    <option value="1">1</option>
+                                                    <option value="2" selected>2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                  </select>
+                                                  </td>
+                                                <td><img src="../img/magic/table_name9.gif" width="42" height="11"></td>
+                                                <td><input type="checkbox" name="checkper" value="1"></td>
+                                                <td><img src="../img/magic/table_td.gif" width="15" height="13"></td>
+                                                <td><img src="../img/magic/table_name10.gif" width="89" height="11"></td>
+                                                <td><input type="checkbox" name="roa" value="1"></td>
+                                              </tr>
+                                            </table></td>
+                                        </tr>
+                                      </table></td>
+                                  </tr>
+                                </table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+								  <tr>
+									<td width="30%" height="20" align="left" class="dotum">2018 3Q K-IFRS(Consolidated)</td>
+                                    <td width="70%" height="20" align="right" class="dotum"> 당일 종가 반영 여부는 상단의 기준일을 확인하시기 바랍니다.</td>
+								  </tr>
+								</table>
+                              </form></td>
+                          </tr>
+                          <tr>
+                            <td>
+								<table id="ci-grid">
+
+								</table>
+							</td>
+                          </tr>
+                        </table>
+						<table width="850" border="0" cellspacing="0" cellpadding="0" style="margin-top:5px;">
+						<tr>
+							<td><font color="777777" style="font-size:12px;">※ 셀프펀드의 모든 자료와 마법공식은 상표권과 특허로 보호 되고 있으며 이를 무단 도용시 상표권 위반으로 법적 제재를 받을 수 있습니다.</font></td>
+						</tr>
+						</table>
+						<br>
+						<table width="850" border="0" cellspacing="0" cellpadding="0" style="margin-top:5px;">
+						<tr>
+							<td class="menu_so"><img src="../img/magic/bot_info2.gif" width="852" height="95"></td>
+						</tr>
+						</table>
+                      </td>
+                    </tr>
+                  </table>
+<form name="frmAdd" method="post" target="fraStock">
+	<input type="hidden" name="adCorpNo">
+	<input type="hidden" name="adCorpName">
+</form>
+<iframe name="fraStock" id="fraStock" style="width:200;height:200;display:none;" frameborder="0" scrolling="yes"></iframe>
+<iframe name="ifrm" width=0 height=0 frameborder=0 scrolling=no marginwidth="0" marginheight="0" allowTransparency="true" style="display:none;"></iframe>
+				  </td>
+              </tr>
+              <tr>
+                <td height="25"></td>
+              </tr>
+              <!-- 카피라이트 시작-->
+              <tr>
+                <td>
+                  <table width="1010" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="22" bgcolor="#FFFFFF">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="29" align="right" background="/img/include/bot_bg.gif" bgcolor="#FFFFFF"><table width="712" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><a href="/main.asp"><img src="/img/include/copy_m01.gif" width="49" height="20" border="0"></a></td>
+          <td><a href="/member/UserJoin.asp"><img src="/img/include/copy_m02.gif" width="60" height="20" border="0"></a></td>
+          <td><a href="/member/policy.asp"><img src="/img/include/copy_m09.gif" width="90" height="20" border="0"></a></td>
+          <td><a href="/login/login.asp"><img src="/img/include/copy_m03.gif" width="87" height="20" border="0"></a></td>
+          <td><a href="/member/stipulation.asp"><img src="/img/include/copy_m04.gif" width="78" height="20" border="0"></a></td>
+          <td><a href="/member/sitemap.asp"><img src="/img/include/copy_m05.gif" width="62" height="20" border="0"></a></td>
+          <td><a href="mailto:master@selffund.co.kr"><img src="/img/include/copy_m06.gif" width="75" height="20" border="0"></a></td>
+          <td><img src="/img/include/copy_m07.gif" width="37" height="20"></td>
+          <td width="80">
+            <!-- 방문자  today-->
+            <font color="FF0000"><strong>281</strong></font></td>
+          <td><img src="/img/include/copy_m08.gif" width="34" height="20"></td>
+          <td width="120">
+            <!--방문자 total-->
+            <strong>9820034</strong></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="29" align="right" bgcolor="#FFFFFF"><img src="/img/include/copyright.gif" width="600" height="60" border="0" usemap="#Map_mail"></td>
+  </tr>
+  <tr>
+    <td height="25" bgcolor="#FFFFFF"></td>
+  </tr>
+</table>
+<map name="Map_mail">
+  <area shape="rect" coords="390,42,506,58" href="mailto:master@selffund.co.kr">
+  <area shape="rect" coords="403,8,503,21" href="mailto:master@selffund.co.kr">
+</map>
+
+                </td>
+              </tr>
+              <!-- 카피라이트 끝-->
+            </table></td>
+          <td valign="top" background="../img/quick/bg_sub2.gif">
+            <!--퀵메뉴 시작-->
+            <table width="103" border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+    <td><img src="../img/quick/sub2_m1.gif" width="103" height="20" border="0" usemap="#Map_quick"></td>
+  </tr>
+  <tr>
+    <td><a href="../member/SearchAccountPassword.asp"><img src="../img/quick/sub2_m2.gif" width="103" height="21" border="0"></a></td>
+  </tr>
+
+  <tr>
+    <td><a href="../cashback/charge_01.asp"><img src="../img/quick/sub2_m3.gif" width="103" height="21" border="0"></a></td>
+  </tr>
+  <tr>
+    <td><!--<a href="http://cafe.naver.com/jusiksijang" target="_blank"><img src="../img/quick/sub2_m5.gif" width="103" height="20" border="0"></a>--></td>
+  </tr>
+</table>
+<map name="Map_quick" id="Map_quick">
+  <area shape="rect" coords="11,3,40,15" href="../login/Login.asp">
+  <area shape="rect" coords="46,3,85,16" href="../member/UserJoin.asp">
+</map>
+
+            <!--퀵메뉴 끝-->
+          </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<script id="ci-grid-template" type="text/template">
+    <table width="850px" height="400px">
+        <thead>
+            <tr>
+				<th fixed="fixed" name="id11" width="67px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">순위</th>
+				<th fixed="fixed" name="id12" width="95px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">종목코드</th>
+				<th fixed="fixed" name="id13" width="110px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">종목명</th>
+				<th name="id14" width="70px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">시장</th>
+				<th name="id15" width="100px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">업종</th>
+				<th name="id16" width="85px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">종가</th>
+				<th name="id17" width="75px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">PER</th>
+				<th name="id18" width="90px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">ROA</th>
+				<th name="id19" width="85px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">EPS</th>
+				<th name="id20" width="85px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">BPS</th>
+				<th name="id21" width="75px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">PBR</th>
+				<th name="id22" width="90px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">ROE</th>
+				<th name="id26" width="110px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">시총(백만원)</th>
+				<th name="id23" width="85px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">관리여부</th>
+				<th name="id24" width="200px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">산업명</th>
+				<th name="id25" width="80px" style="font-size:12px;text-align:center;font-weight:normal;line-height: 26px;height:26px;">결산월</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr style="line-height: 26px;height:26px;">
+				<td name="id11" bind="id11" style="text-align:center;"></td>
+				<td name="id12" bind="id12" style="text-align:center;"></td>
+				<td name="id13" bind="id13"></td>
+				<td name="id14" bind="id14" style="text-align:center;"></td>
+				<td name="id15" bind="id15"></td>
+				<td name="id16" bind="id16" style="text-align:right;"></td>
+				<td name="id17" bind="id17" style="text-align:right;"></td>
+				<td name="id18" bind="id18" style="text-align:right;"></td>
+				<td name="id19" bind="id19" style="text-align:right;"></td>
+				<td name="id20" bind="id20" style="text-align:right;"></td>
+				<td name="id21" bind="id21" style="text-align:right;"></td>
+				<td name="id22" bind="id22" style="text-align:right;"></td>
+				<td name="id26" bind="id26" style="text-align:right;"></td>
+				<td name="id23" bind="id23" style="text-align:center;"></td>
+				<td name="id24" bind="id24"></td>
+				<td name="id25" bind="id25" style="text-align:center;"></td>
+            </tr>
+        </tbody>
+    </table>
+</script>
+
+<script>
+	var table = $('#ci-grid');
+	var template = $('#ci-grid-template');
+	var grid = webponent.grid.init(table, template, {
+		rowSelectable : true,
+		rowRendered : function(row, data, index){
+			if(data.id23 == '관리'){
+				$(row).find('td:eq(2)').css('color','#ccc')
+				$(row).find('td:eq(12)').css('color','#ccc')
+			}
+		}
+	});
+	grid.settings.trHeight = 27;
+
+	function go_search(sDate) {
+		var formData = $("#frm").serialize();
+
+		grid.removeRow();
+
+		$.ajax({
+			url : 'StockAnalysisProcess_ybs.asp?sDate=' + sDate ,
+			type : "POST",
+			dataType : 'html',
+			data : formData,
+			success : function (resp) {
+				if(resp == "noData"){
+					alert("해당 날짜의 주식정보가 없습니다.");
+				}
+				else{
+					grid.appendRow(resp);
+				}
+			}
+		});
+	}
+
+	$(document).ready(function() {
+		go_search("2019-02-01");
+
+		$(grid.markup.main.body.tbody).on('dblclick', 'tr', function () {
+			var row = this;
+			var data = row.data;
+			var Rank = data.id11;
+			var Search = data.id12;
+
+			if("3" == 0 || "3" == 2){
+				window.open("/CorpInfo/CorpInfoPop.asp?SearchCode=*******************************************************************************************&Search=" + Search + "&Rank=" + Rank, "nwCorpInfo", "width=930,top=0,left=0,toolbar=no,location=no,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=no");
+			}
+			else{
+				alert("유료회원 기능입니다.");
+			}
+		});
+
+		var innerHTML = "<div style='width:850px;height:400px;text-align:center;margin-top:100px;'><img src='/images/wait_grid.gif'><br><br>데이터를 생성중입니다. 잠시만 기다려 주십시오.</div>";
+		$(grid.markup.main.body.tbody).append(innerHTML);
+
+		$(".CI-GRID-HEADER-MICELINOUS").css("display", "none");
+	});
+
+	function ConvertExcel(){
+		document.frm.target = "fraStock";;
+		document.frm.action = "StockAnalysisExcelExport.asp";
+		document.frm.submit();
+	}
+
+	function autocompleteNew(){
+		if(window.event.keyCode == 13) {
+			search();
+		}
+		else{
+			var frm = self.document.frm;
+			frm.target="ifrm";
+			frm.action="AutoCompleteProcess.asp";
+			frm.submit();
+		}
+	}
+
+	function search() {
+		var key = $('#sCorpname').val();
+		grid.search(key);
+		$("#id_layer").css("display", "none");
+	}
+
+	function AddInvestment() {
+		var row = grid.getSelectedRowData();
+
+		if(row.length == 1){
+			window.open("InvestBuy.asp?CorpNo="+row[0].id12+"&CorpName="+row[0].id13,"nwInvBuy","left=0,top=0,width=430,height=450,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes");
+		}
+	}
+
+	function AddInterestCorp(){
+		var row = grid.getSelectedRowData();
+
+		if(row.length == 1){
+			document.frmAdd.adCorpNo.value = row[0].id12
+			document.frmAdd.adCorpName.value = row[0].id13
+			document.frmAdd.action = "InterestCorpInsertProcess.asp"
+			document.frmAdd.submit();
+		}
+	}
+</script>
+
+<script>
+	$(function(){
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		 $('.m_nav_wrap embed').css('display','none').remove();
+		 $('.m_nav').css('display','block');
+		}
+	});
+</script>
+</body>
+</html>
